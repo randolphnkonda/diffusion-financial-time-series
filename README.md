@@ -213,6 +213,13 @@ generated samples are prefixed with the sampler, e.g.
 
 ## Model
 
+<p align="center">
+  <img src="assets/architecture.png" width="440" alt="Score network architecture: gated residual blocks with a temporal transformer, two embedding injections, a filter and gate activation unit, and residual and skip aggregation paths">
+</p>
+<p align="center"><em>Score network architecture: gated residual blocks with a temporal
+transformer, diffusion-step and time conditioning, and skip aggregation.
+Adapted from Tashiro et al. (2021).</em></p>
+
 A residual convolutional backbone in the style of WaveNet/DiffWave, with the
 CSDI temporal transformer layer in each block (Tashiro et al., 2021), adapted
 to univariate return windows:
